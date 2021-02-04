@@ -15,7 +15,7 @@ public class Dialog : MonoBehaviour
     private int _index = 0;
     private DialogLineUI _currentLineUI;
 
-    private int _direction = -1;
+    private int _direction = 1;
 
     private bool _isAnimating = false;
 
