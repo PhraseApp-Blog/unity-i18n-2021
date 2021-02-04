@@ -1071,15 +1071,16 @@ MonoBehaviour:
   _uiActivePosition: {x: 0, y: 82}
   _offScreenXPosition: 270
   _slidingAnimationDuration: 0.5
+  _textAnimationDuration: 0.05
   _lines:
   - _line: What on earth happened to you back there?
     _ui: {fileID: 4149813326407015802, guid: a16705854b26a4ba5a10b9c82425f233, type: 3}
   - _line: Wolves...wolves happened.
-    _ui: {fileID: 4149813326407015802, guid: a16705854b26a4ba5a10b9c82425f233, type: 3}
+    _ui: {fileID: 4149813326407015802, guid: b6d12da2a75624786882b97827edca5e, type: 3}
   - _line: Wolves...we were at the mall.
     _ui: {fileID: 4149813326407015802, guid: a16705854b26a4ba5a10b9c82425f233, type: 3}
   - _line: At least...12...wolves. Lots of wolves....big....big wolves.
-    _ui: {fileID: 4149813326407015802, guid: a16705854b26a4ba5a10b9c82425f233, type: 3}
+    _ui: {fileID: 4149813326407015802, guid: b6d12da2a75624786882b97827edca5e, type: 3}
 --- !u!1 &2062191117
 GameObject:
   m_ObjectHideFlags: 0

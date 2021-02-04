@@ -377,7 +377,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Crono has leveled up!
+  m_text: Tinka has leveled up!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0a5c773841a354329bb15e62c8cefb3f, type: 2}
   m_sharedMaterial: {fileID: 4348104816917892618, guid: 0a5c773841a354329bb15e62c8cefb3f,
