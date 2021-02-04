@@ -1,14 +1,22 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using DG.Tweening;
+using UnityEngine;
 
 public class Dialog : MonoBehaviour
 {
     [SerializeField] private Transform _lineUIContainer;
-    [SerializeField] private Vector2 _uiPosition = new Vector2(0, 82);
-    
+    [SerializeField] private Vector2 _uiActivePosition = new Vector2(0, 82);
+    [SerializeField] private float _offScreenXPosition = 270;
+    [SerializeField] private float _slidingAnimationDuration = 0.5f;
+
     [SerializeField] private DialogLine[] _lines;
 
     private int _index = 0;
-    private DialogLineUI _lineUI;
+    private DialogLineUI _currentLineUI;
+
+    private int _direction = -1;
+
+    private bool _isAnimating = false;
 
     private void Awake()
     {
@@ -26,31 +34,59 @@ public class Dialog : MonoBehaviour
 
     public void NextLine()
     {
+        if (_isAnimating)
+        {
+            return;
+        }
+        
         if (_index < _lines.Length)
         {
-            RemoveCurrentLine();
-            ShowNextLine();
+            StartCoroutine(MoveLineUIs(_lines[_index]));
+
             _index += 1;
         }
     }
 
-    private void RemoveCurrentLine()
+    private IEnumerator MoveLineUIs(DialogLine incomingLine)
     {
-        if (_lineUI)
+        _isAnimating = true;
+        
+        if (_currentLineUI)
         {
-            Destroy(_lineUI.gameObject);
+            _currentLineUI.transform.DOLocalMoveX(
+                _offScreenXPosition * _direction, 
+                _slidingAnimationDuration);
         }
+        
+        var incomingLineUI = InstantiateLineUI(_lines[_index]);
+        incomingLineUI.transform.DOLocalMoveX(
+            _uiActivePosition.x, _slidingAnimationDuration);
+        
+        yield return new WaitForSeconds(_slidingAnimationDuration);
+    
+        if (_currentLineUI)
+        {
+            Destroy(_currentLineUI.gameObject);
+        }
+
+        _currentLineUI = incomingLineUI;
+
+        _currentLineUI.SetLine(incomingLine.Line);
+
+        _direction *= -1;
+
+        _isAnimating = false;
     }
 
-    private void ShowNextLine()
-    {
-        var line = _lines[_index];
+    private DialogLineUI InstantiateLineUI(DialogLine line)
+    { 
+        var ui = Instantiate(line.UI, _lineUIContainer, true);
         
-        _lineUI = Instantiate(line.UI, _lineUIContainer, true);
-        var lineUITransform = _lineUI.transform;
-        lineUITransform.localPosition = _uiPosition;
+        var lineUITransform = ui.transform;
+        lineUITransform.localPosition = new Vector2(
+            _offScreenXPosition * -_direction, _uiActivePosition.y);
         lineUITransform.localScale = Vector3.one;
-
-        _lineUI.SetLine(line.Line);
+        
+        return ui;
     }
 }
