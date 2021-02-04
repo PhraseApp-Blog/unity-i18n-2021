@@ -8,6 +8,7 @@ public class Dialog : MonoBehaviour
     [SerializeField] private Vector2 _uiActivePosition = new Vector2(0, 82);
     [SerializeField] private float _offScreenXPosition = 270;
     [SerializeField] private float _slidingAnimationDuration = 0.5f;
+    [SerializeField] private float _textAnimationDuration = 0.05f;
 
     [SerializeField] private DialogLine[] _lines;
 
@@ -34,10 +35,7 @@ public class Dialog : MonoBehaviour
 
     public void NextLine()
     {
-        if (_isAnimating)
-        {
-            return;
-        }
+        if (_isAnimating) { return; }
         
         if (_index < _lines.Length)
         {
@@ -59,6 +57,7 @@ public class Dialog : MonoBehaviour
         }
         
         var incomingLineUI = InstantiateLineUI(_lines[_index]);
+        incomingLineUI.Text = string.Empty;
         incomingLineUI.transform.DOLocalMoveX(
             _uiActivePosition.x, _slidingAnimationDuration);
         
@@ -71,8 +70,9 @@ public class Dialog : MonoBehaviour
 
         _currentLineUI = incomingLineUI;
 
-        _currentLineUI.SetLine(incomingLine.Line);
-
+        yield return StartCoroutine(AnimateText(
+            _currentLineUI, incomingLine.Line));
+        
         _direction *= -1;
 
         _isAnimating = false;
@@ -83,10 +83,22 @@ public class Dialog : MonoBehaviour
         var ui = Instantiate(line.UI, _lineUIContainer, true);
         
         var lineUITransform = ui.transform;
+        
         lineUITransform.localPosition = new Vector2(
             _offScreenXPosition * -_direction, _uiActivePosition.y);
         lineUITransform.localScale = Vector3.one;
         
         return ui;
+    }
+    
+    private IEnumerator AnimateText(
+        DialogLineUI currentLineUI, string incomingLine)
+    {
+        foreach (var character in incomingLine.ToCharArray())
+        {
+            currentLineUI.Text += character.ToString();
+            
+            yield return new WaitForSeconds(_textAnimationDuration);
+        }
     }
 }
