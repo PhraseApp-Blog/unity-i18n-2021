@@ -31,6 +31,10 @@ MonoBehaviour:
     m_Key: thief_stole
     m_Metadata:
       m_Items: []
+  - m_Id: 89466076127232
+    m_Key: today
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
