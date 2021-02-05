@@ -23,6 +23,10 @@ MonoBehaviour:
     m_Key: character_leveled
     m_Metadata:
       m_Items: []
+  - m_Id: 17182976106496
+    m_Key: party_combo_points
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

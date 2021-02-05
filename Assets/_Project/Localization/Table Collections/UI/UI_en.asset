@@ -28,9 +28,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - id: 0
+  - m_Id: 17182976106496
+    m_Localized: Your party has {ComboPointCount:plural:{} combo point|{} combo points}.
+    m_Metadata:
+      m_Items:
+      - id: 0
   references:
     version: 1
     00000000:
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 00e02f6eb1050000
+        m_Entries: 00e02f6eb105000000e02fb9a00f0000
