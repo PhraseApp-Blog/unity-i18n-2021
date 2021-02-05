@@ -3,5 +3,5 @@
 public class Values : MonoBehaviour
 {
     public readonly string Character = "Tinka";
-    public readonly int ComboPointCount = 112;
+    public readonly int ComboPointCount = 0;
 }

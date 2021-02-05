@@ -28,9 +28,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - id: 0
+  - m_Id: 17182976106496
+    m_Localized: "\u0645\u062C\u0645\u0648\u0639\u062A\u0643 \u062A\u0645\u0644\u0643
+      {ComboPointCount:plural:\u0646\u0642\u0637\u0629 \u0643\u0648\u0645\u0628\u0648
+      \u0648\u0627\u062D\u062F\u0629 ({})|\u0646\u0642\u0637\u0627\u062A\u0646 ({})
+      \u0643\u0648\u0645\u0628\u0648|{} \u0646\u0642\u0627\u0637 \u0643\u0648\u0645\u0628\u0648|{}
+      \u0646\u0642\u0637\u0629 \u0643\u0648\u0645\u0628\u0648|{} \u0646\u0642\u0637\u0629
+      \u0643\u0648\u0645\u0628\u0648}"
+    m_Metadata:
+      m_Items:
+      - id: 0
   references:
     version: 1
     00000000:
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 00e02f6eb1050000
+        m_Entries: 00e02f6eb105000000e02fb9a00f0000
