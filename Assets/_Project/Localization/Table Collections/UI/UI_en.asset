@@ -33,9 +33,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - id: 0
+  - m_Id: 80275999547392
+    m_Localized: A thief stole {StolenAmount:C} from you!
+    m_Metadata:
+      m_Items:
+      - id: 0
   references:
     version: 1
     00000000:
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 00e02f6eb105000000e02fb9a00f0000
+        m_Entries: 00e02f6eb105000000e02fb9a00f000000e06fb602490000

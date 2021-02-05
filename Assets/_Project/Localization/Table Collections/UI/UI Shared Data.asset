@@ -27,6 +27,10 @@ MonoBehaviour:
     m_Key: party_combo_points
     m_Metadata:
       m_Items: []
+  - m_Id: 80275999547392
+    m_Key: thief_stole
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
