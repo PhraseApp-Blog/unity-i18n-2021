@@ -24,7 +24,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6259615981568
-    m_Localized: '{Character} has leveled up!'
+    m_Localized: '{Character} has levelled up!'
     m_Metadata:
       m_Items:
       - id: 0
