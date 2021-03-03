@@ -1,7 +1,4 @@
-﻿//#define RTL_OVERRIDE
-
-using System.Linq;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 
 namespace RTLTMPro
@@ -10,7 +7,7 @@ namespace RTLTMPro
     public class RTLTextMeshPro : TextMeshProUGUI
     {
         // ReSharper disable once InconsistentNaming
-#if RTL_OVERRIDE
+#if TMP_VERSION_2_1_0_OR_NEWER
         public override string text
 #else
         public new string text
@@ -72,7 +69,7 @@ namespace RTLTMPro
             }
         }
 
-        protected bool ForceFix
+        public bool ForceFix
         {
             get { return forceFix; }
             set
@@ -85,21 +82,17 @@ namespace RTLTMPro
             }
         }
 
-        [SerializeField]
-        protected bool preserveNumbers;
+        [SerializeField] protected bool preserveNumbers;
 
-        [SerializeField]
-        protected bool farsi = true;
+        [SerializeField] protected bool farsi = true;
 
-        [SerializeField]
-        [TextArea(3, 10)]
-        protected string originalText;
+        [SerializeField] [TextArea(3, 10)] protected string originalText;
 
-        [SerializeField]
-        protected bool fixTags = true;
+        [SerializeField] protected bool fixTags = true;
 
-        [SerializeField]
-        protected bool forceFix;
+        [SerializeField] protected bool forceFix;
+
+        protected readonly FastStringBuilder finalText = new FastStringBuilder(RTLSupport.DefaultBufferSize);
 
         protected void Update()
         {
@@ -114,12 +107,11 @@ namespace RTLTMPro
             if (originalText == null)
                 originalText = "";
 
-            if (ForceFix == false && RTLSupport.IsRTLInput(originalText) == false)
+            if (ForceFix == false && TextUtils.IsRTLInput(originalText) == false)
             {
                 isRightToLeftText = false;
                 base.text = originalText;
-            }
-            else
+            } else
             {
                 isRightToLeftText = true;
                 base.text = GetFixedText(originalText);
@@ -133,10 +125,11 @@ namespace RTLTMPro
             if (string.IsNullOrEmpty(input))
                 return input;
 
-            input = RTLSupport.FixRTL(input, fixTags, preserveNumbers, farsi);
-            input = input.Reverse().ToArray().ArrayToString();
+            finalText.Clear();
+            RTLSupport.FixRTL(input, finalText, farsi, fixTags, preserveNumbers);
+            finalText.Reverse();
 
-            return input;
+            return finalText.ToString();
         }
     }
 }

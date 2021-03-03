@@ -962,7 +962,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "\u0627\uFEE3\uFE8E\u0645 \uFEA3\uFEB4\uFBFF\uFEE6 )\u0639("
+  m_text: "\u0627\uFEE3\uFE8E\u0645 \uFEA3\uFEB4\uFBFF\uFEE6 (\u0639)"
   m_isRightToLeft: 1
   m_fontAsset: {fileID: 11400000, guid: 3fbde2e562e333d488bc46986fc6f4f1, type: 2}
   m_sharedMaterial: {fileID: 21623836076631360, guid: 3fbde2e562e333d488bc46986fc6f4f1,
@@ -1637,7 +1637,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "\u0627\uFECB\uFEFC\u0645 \xBB\u0622\u0632\u0627\u062F\u06CC\xAB \uFEE3\uFEAE\u062F\u0645"
+  m_text: "\u0627\uFECB\uFEE0\u0645 \xAB\u0622\u0632\u0627\u062F\u06CC\xBB \uFEE3\uFEAE\u062F\u0645"
   m_isRightToLeft: 1
   m_fontAsset: {fileID: 11400000, guid: 3fbde2e562e333d488bc46986fc6f4f1, type: 2}
   m_sharedMaterial: {fileID: 21623836076631360, guid: 3fbde2e562e333d488bc46986fc6f4f1,
