@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Project/Scenes/UI.unity
+    path: Assets/_Project/Scenes/UI - Static Values.unity
     guid: 37c12418eb75a44f19f8d0c7279ec78e
   - enabled: 1
     path: Assets/_Project/Scenes/Dialog.unity

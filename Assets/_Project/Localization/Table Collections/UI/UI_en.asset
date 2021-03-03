@@ -43,9 +43,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - id: 0
+  - m_Id: 9508890361192448
+    m_Localized: '{global.character} has gained an abililty!'
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 9515711897526272
+    m_Localized: Match beginning in {global.match-timer:plural:{} second|{} seconds}.
+    m_Metadata:
+      m_Items:
+      - id: 0
   references:
     version: 1
     00000000:
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 00e02f6eb105000000e02fb9a00f000000e06fb60249000000e0af715e510000
+        m_Entries: 00e02f6eb105000000e02fb9a00f000000e06fb60249000000e0af715e51000000e02f1049c8210000e06f537dce2100
