@@ -407,6 +407,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75bcce9e28e4c47b28cb9f88bc49b3bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Character: Tinka
+  ComboPointCount: 200
+  StolenAmount: 1014.99
 --- !u!114 &232051350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -727,6 +730,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75bcce9e28e4c47b28cb9f88bc49b3bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Character: Tinka
+  ComboPointCount: 200
+  StolenAmount: 1014.99
 --- !u!1 &443355543
 GameObject:
   m_ObjectHideFlags: 0
@@ -778,6 +784,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75bcce9e28e4c47b28cb9f88bc49b3bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Character: Tinka
+  ComboPointCount: 200
+  StolenAmount: 1014.99
 --- !u!114 &443355546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1435,6 +1444,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75bcce9e28e4c47b28cb9f88bc49b3bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Character: Tinka
+  ComboPointCount: 200
+  StolenAmount: 1014.99
 --- !u!114 &666794223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2240,6 +2252,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75bcce9e28e4c47b28cb9f88bc49b3bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Character: Tinka
+  ComboPointCount: 200
+  StolenAmount: 1014.99
 --- !u!114 &1387824829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2504,6 +2519,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75bcce9e28e4c47b28cb9f88bc49b3bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Character: Tinka
+  ComboPointCount: 200
+  StolenAmount: 1014.99
 --- !u!114 &1888015517
 MonoBehaviour:
   m_ObjectHideFlags: 0
