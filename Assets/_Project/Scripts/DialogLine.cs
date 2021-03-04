@@ -5,9 +5,8 @@ using UnityEngine;
 public class DialogLine
 {
     [SerializeField]
-    [TextArea]
-    private string _line;
-    public string Line => _line;
+    private string _lineKey;
+    public string LineKey => _lineKey;
 
     [SerializeField] private DialogLineUI _ui;
     public DialogLineUI UI => _ui;

@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Tables;
 
 public class Dialog : MonoBehaviour
 {
@@ -10,17 +12,22 @@ public class Dialog : MonoBehaviour
     [SerializeField] private float _slidingAnimationDuration = 0.5f;
     [SerializeField] private float _textAnimationDuration = 0.05f;
 
+    [SerializeField] private LocalizedStringTable _localizedStringTable;
+
     [SerializeField] private DialogLine[] _lines;
 
     private int _index = 0;
-    private DialogLineUI _currentLineUI;
-
     private int _direction = 1;
-
     private bool _isAnimating = false;
+    private DialogLineUI _currentLineUI;
+    private StringTable _currentStringTable;
 
-    private void Awake()
+    private IEnumerator Start()
     {
+        var tableLoading = _localizedStringTable.GetTable();
+        yield return tableLoading;
+        _currentStringTable = tableLoading.Result;
+
         EmptyLineUIContainer();
         NextLine();
     }
@@ -71,7 +78,7 @@ public class Dialog : MonoBehaviour
         _currentLineUI = incomingLineUI;
 
         yield return StartCoroutine(AnimateText(
-            _currentLineUI, incomingLine.Line));
+            _currentLineUI, _currentStringTable[incomingLine.LineKey].Value));
         
         _direction *= -1;
 
