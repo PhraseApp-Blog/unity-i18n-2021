@@ -43,6 +43,10 @@ MonoBehaviour:
     m_Key: match_time
     m_Metadata:
       m_Items: []
+  - m_Id: 9777009512144896
+    m_Key: crit_chance
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

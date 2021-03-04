@@ -64,6 +64,7 @@ MonoBehaviour:
   m_SourceFontFile: {fileID: 0}
   m_AtlasPopulationMode: 0
   m_FaceInfo:
+    m_FaceIndex: 0
     m_FamilyName: Jost
     m_StyleName: Regular
     m_PointSize: 43
@@ -5329,7 +5330,8 @@ MonoBehaviour:
   m_FontFeatureTable:
     m_GlyphPairAdjustmentRecords: []
   fallbackFontAssets: []
-  m_FallbackFontAssetTable: []
+  m_FallbackFontAssetTable:
+  - {fileID: 11400000, guid: 9522603608d6045bcba0c07e69e3f40e, type: 2}
   m_CreationSettings:
     sourceFontFileName: 
     sourceFontFileGUID: 7b82174c85a44491da35f1e61f76e90b

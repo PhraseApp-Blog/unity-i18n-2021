@@ -25,18 +25,18 @@ MonoBehaviour:
   references:
     version: 1
     00000000:
-      type: {class: CommandLineLocaleSelector, ns: UnityEngine.Localization.Settings,
-        asm: Unity.Localization}
-      data:
-        m_CommandLineArgument: -language =
-    00000001:
-      type: {class: SystemLocaleSelector, ns: UnityEngine.Localization.Settings, asm: Unity.Localization}
-    00000002:
       type: {class: SpecificLocaleSelector, ns: UnityEngine.Localization.Settings,
         asm: Unity.Localization}
       data:
         m_LocaleId:
           m_Code: en
+    00000001:
+      type: {class: CommandLineLocaleSelector, ns: UnityEngine.Localization.Settings,
+        asm: Unity.Localization}
+      data:
+        m_CommandLineArgument: -language =
+    00000002:
+      type: {class: SystemLocaleSelector, ns: UnityEngine.Localization.Settings, asm: Unity.Localization}
     00000003:
       type: {class: LocalesProvider, ns: UnityEngine.Localization.Settings, asm: Unity.Localization}
     00000004:
@@ -45,7 +45,7 @@ MonoBehaviour:
       data:
         m_DefaultTableReference:
           m_TableCollectionName: 
-        m_UseFallback: 0
+        m_UseFallback: 1
     00000005:
       type: {class: LocalizedStringDatabase, ns: UnityEngine.Localization.Settings,
         asm: Unity.Localization}
@@ -71,9 +71,9 @@ MonoBehaviour:
         - id: 12
         - id: 13
         - id: 14
+        - id: 15
         m_Formatters:
         - id: 9
-        - id: 15
         - id: 16
         - id: 17
         - id: 18
@@ -81,6 +81,7 @@ MonoBehaviour:
         - id: 20
         - id: 21
         - id: 22
+        - id: 23
     00000007:
       type: {class: SmartSettings, ns: UnityEngine.Localization.SmartFormat.Core.Settings,
         asm: Unity.Localization}
@@ -128,6 +129,13 @@ MonoBehaviour:
       type: {class: DefaultSource, ns: UnityEngine.Localization.SmartFormat.Extensions,
         asm: Unity.Localization}
     0000000F:
+      type: {class: GlobalVariablesSource, ns: UnityEngine.Localization.SmartFormat.Extensions,
+        asm: Unity.Localization}
+      data:
+        m_Groups:
+        - name: global
+          group: {fileID: 11400000, guid: 8b112ab3395124540801a31ed7ace100, type: 2}
+    00000010:
       type: {class: PluralLocalizationFormatter, ns: UnityEngine.Localization.SmartFormat.Extensions,
         asm: Unity.Localization}
       data:
@@ -136,7 +144,7 @@ MonoBehaviour:
         - p
         - 
         m_DefaultTwoLetterISOLanguageName: en
-    00000010:
+    00000011:
       type: {class: ConditionalFormatter, ns: UnityEngine.Localization.SmartFormat.Extensions,
         asm: Unity.Localization}
       data:
@@ -144,7 +152,7 @@ MonoBehaviour:
         - conditional
         - cond
         - 
-    00000011:
+    00000012:
       type: {class: TimeFormatter, ns: UnityEngine.Localization.SmartFormat.Extensions,
         asm: Unity.Localization}
       data:
@@ -154,7 +162,7 @@ MonoBehaviour:
         - t
         - 
         m_DefaultFormatOptions: 4646
-    00000012:
+    00000013:
       type: {class: XElementFormatter, ns: UnityEngine.Localization.SmartFormat.Extensions,
         asm: Unity.Localization}
       data:
@@ -163,7 +171,7 @@ MonoBehaviour:
         - xml
         - x
         - 
-    00000013:
+    00000014:
       type: {class: ChooseFormatter, ns: UnityEngine.Localization.SmartFormat.Extensions,
         asm: Unity.Localization}
       data:
@@ -171,7 +179,7 @@ MonoBehaviour:
         - choose
         - c
         m_SplitChar: 124
-    00000014:
+    00000015:
       type: {class: SubStringFormatter, ns: UnityEngine.Localization.SmartFormat.Extensions,
         asm: Unity.Localization}
       data:
@@ -179,13 +187,13 @@ MonoBehaviour:
         - substr
         m_ParameterDelimiter: 44
         m_NullDisplayString: (null)
-    00000015:
+    00000016:
       type: {class: IsMatchFormatter, ns: UnityEngine.Localization.SmartFormat.Extensions,
         asm: Unity.Localization}
       data:
         m_Names:
         - ismatch
-    00000016:
+    00000017:
       type: {class: DefaultFormatter, ns: UnityEngine.Localization.SmartFormat.Extensions,
         asm: Unity.Localization}
       data:

@@ -53,9 +53,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - id: 0
+  - m_Id: 9777009512144896
+    m_Localized: 'Critical hit chance: {global.crit-chance:P0}'
+    m_Metadata:
+      m_Items:
+      - id: 0
   references:
     version: 1
     00000000:
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 00e02f6eb105000000e02fb9a00f000000e06fb60249000000e0af715e51000000e02f1049c8210000e06f537dce2100
+        m_Entries: 00e02f6eb105000000e02fb9a00f000000e06fb60249000000e0af715e51000000e02f1049c8210000e06f537dce210000e0ef6a23bc2200

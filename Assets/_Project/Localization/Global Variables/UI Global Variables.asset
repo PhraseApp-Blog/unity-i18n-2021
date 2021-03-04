@@ -19,15 +19,23 @@ MonoBehaviour:
   - name: match-timer
     variable:
       id: 1
+  - name: crit-chance
+    variable:
+      id: 2
   references:
     version: 1
     00000000:
       type: {class: StringGlobalVariable, ns: UnityEngine.Localization.SmartFormat.GlobalVariables,
         asm: Unity.Localization}
       data:
-        m_Value: Marm
+        m_Value: Awi
     00000001:
       type: {class: IntGlobalVariable, ns: UnityEngine.Localization.SmartFormat.GlobalVariables,
         asm: Unity.Localization}
       data:
         m_Value: 0
+    00000002:
+      type: {class: FloatGlobalVariable, ns: UnityEngine.Localization.SmartFormat.GlobalVariables,
+        asm: Unity.Localization}
+      data:
+        m_Value: 0.245

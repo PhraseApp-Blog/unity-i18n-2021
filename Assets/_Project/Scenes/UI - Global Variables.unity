@@ -789,7 +789,6 @@ GameObject:
   - component: {fileID: 443355548}
   - component: {fileID: 443355547}
   - component: {fileID: 443355546}
-  - component: {fileID: 443355545}
   m_Layer: 5
   m_Name: Text (RTLTMP)
   m_TagString: Untagged
@@ -816,21 +815,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -21.969543, y: -11.829742}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &443355545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 443355543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75bcce9e28e4c47b28cb9f88bc49b3bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Character: Tinka
-  ComboPointCount: 200
-  StolenAmount: 1014.99
 --- !u!114 &443355546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -847,11 +831,10 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:0e450cd5105ad4b63b814a2d6a0eec60
     m_TableEntryReference:
-      m_KeyId: 80275999547392
+      m_KeyId: 9777009512144896
       m_Key: 
     m_FallbackState: 0
-  m_FormatArguments:
-  - {fileID: 443355545}
+  m_FormatArguments: []
   m_UpdateString:
     m_PersistentCalls:
       m_Calls:
@@ -2043,7 +2026,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1363297823}
   m_Layer: 5
-  m_Name: Numbers
+  m_Name: Global Value Numbers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
