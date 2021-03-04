@@ -967,6 +967,7 @@ GameObject:
   - component: {fileID: 1218498976}
   - component: {fileID: 1218498975}
   - component: {fileID: 1218498979}
+  - component: {fileID: 1218498980}
   m_Layer: 5
   m_Name: Dialog Canvas
   m_TagString: Untagged
@@ -1075,6 +1076,7 @@ MonoBehaviour:
   _localizedStringTable:
     m_TableReference:
       m_TableCollectionName: GUID:a863b5b9d770943378389b461911f783
+  _values: {fileID: 1218498980}
   _lines:
   - _lineKey: line01
     _ui: {fileID: 4149813326407015802, guid: a16705854b26a4ba5a10b9c82425f233, type: 3}
@@ -1084,6 +1086,21 @@ MonoBehaviour:
     _ui: {fileID: 4149813326407015802, guid: a16705854b26a4ba5a10b9c82425f233, type: 3}
   - _lineKey: line04
     _ui: {fileID: 4149813326407015802, guid: b6d12da2a75624786882b97827edca5e, type: 3}
+--- !u!114 &1218498980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218498974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75bcce9e28e4c47b28cb9f88bc49b3bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Character: Tinka
+  ComboPointCount: 200
+  StolenAmount: 1014.99
 --- !u!1 &2062191117
 GameObject:
   m_ObjectHideFlags: 0

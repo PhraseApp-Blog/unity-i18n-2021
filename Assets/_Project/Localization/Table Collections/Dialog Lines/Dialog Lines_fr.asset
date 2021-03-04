@@ -16,11 +16,30 @@ MonoBehaviour:
     m_Code: fr
   m_SharedData: {fileID: 11400000, guid: a863b5b9d770943378389b461911f783, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - id: 0
   m_TableData:
   - m_Id: 9171886080
     m_Localized: "Que diable vous est-il arriv\xE9 l\xE0-bas?"
     m_Metadata:
       m_Items: []
+  - m_Id: 212427857920
+    m_Localized: "{Character} ... {Character} arriv\xE9s."
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 230916349952
+    m_Localized: "Les loups ... nous \xE9tions au centre commercial."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 246485606400
+    m_Localized: Au moins ... 12 ... loups. Beaucoup de loups ... gros ... grands
+      loups.
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
+    00000000:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00e0af7531000000

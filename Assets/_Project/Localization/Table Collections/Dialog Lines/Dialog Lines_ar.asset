@@ -16,11 +16,32 @@ MonoBehaviour:
     m_Code: ar
   m_SharedData: {fileID: 11400000, guid: a863b5b9d770943378389b461911f783, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - id: 0
   m_TableData:
   - m_Id: 9171886080
     m_Localized: "\u0645\u0627\u0630\u0627 \u062D\u062F\u062B \u0644\u0643 \u0647\u0646\u0627\u0643\u061F"
     m_Metadata:
       m_Items: []
+  - m_Id: 212427857920
+    m_Localized: "{Character} .. {Character} \u062D\u062F\u062B."
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 230916349952
+    m_Localized: "\u0627\u0644\u0630\u0626\u0627\u0628 ... \u0643\u0646\u0627 \u0641\u064A
+      \u0627\u0644\u0645\u0631\u0643\u0632 \u0627\u0644\u062A\u062C\u0627\u0631\u064A."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 246485606400
+    m_Localized: "\u0639\u0644\u0649 \u0627\u0644\u0623\u0642\u0644 ... 12 ... \u0630\u0626\u0627\u0628.
+      \u0627\u0644\u0643\u062B\u064A\u0631 \u0645\u0646 \u0627\u0644\u0630\u0626\u0627\u0628
+      .... \u0630\u0626\u0627\u0628 \u0643\u0628\u064A\u0631\u0629 ....  \u0643\u0628\u064A\u0631\u0629."
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
+    00000000:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00e0af7531000000

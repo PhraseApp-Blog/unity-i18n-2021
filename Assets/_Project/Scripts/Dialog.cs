@@ -13,12 +13,13 @@ public class Dialog : MonoBehaviour
     [SerializeField] private float _textAnimationDuration = 0.05f;
 
     [SerializeField] private LocalizedStringTable _localizedStringTable;
+    [SerializeField] private Values _values;
 
     [SerializeField] private DialogLine[] _lines;
 
-    private int _index = 0;
+    private int _index;
     private int _direction = 1;
-    private bool _isAnimating = false;
+    private bool _isAnimating;
     private DialogLineUI _currentLineUI;
     private StringTable _currentStringTable;
 
@@ -77,8 +78,10 @@ public class Dialog : MonoBehaviour
 
         _currentLineUI = incomingLineUI;
 
-        yield return StartCoroutine(AnimateText(
-            _currentLineUI, _currentStringTable[incomingLine.LineKey].Value));
+        var line = _currentStringTable[incomingLine.LineKey]
+            .GetLocalizedString(_values);
+
+        yield return StartCoroutine(AnimateText(_currentLineUI, line));
         
         _direction *= -1;
 
