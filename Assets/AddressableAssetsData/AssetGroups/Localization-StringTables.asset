@@ -43,7 +43,6 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-ar
-    - Preload
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: 3370077ae9b9740beb8d42bfb4bcc8e8
@@ -51,7 +50,6 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
-    - Preload
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: f07c140686b31410eb8eeacf3cd28ba0
@@ -59,7 +57,6 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-fr
-    - Preload
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   m_ReadOnly: 1
