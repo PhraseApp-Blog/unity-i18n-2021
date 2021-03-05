@@ -100,13 +100,17 @@ public class Dialog : MonoBehaviour
         
         return ui;
     }
-    
+
     private IEnumerator AnimateText(
         DialogLineUI currentLineUI, string incomingLine)
     {
+        var currentLine = string.Empty;
+            
         foreach (var character in incomingLine.ToCharArray())
         {
-            currentLineUI.Text += character.ToString();
+            currentLine += character.ToString();
+            
+            currentLineUI.Text = currentLine;
             
             yield return new WaitForSeconds(_textAnimationDuration);
         }
