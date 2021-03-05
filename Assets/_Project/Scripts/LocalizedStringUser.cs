@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 using UnityEngine.Localization.Tables;
 
 public class LocalizedStringUser : MonoBehaviour
@@ -23,8 +24,9 @@ public class LocalizedStringUser : MonoBehaviour
         Debug.Log($"Simple string: {simpleString}");
         
         var interpolatedString = 
-            _currentStringTable[_interpolatedStringKey]
-                .GetLocalizedString(_interpolatedValues);
+            _currentStringTable[_interpolatedStringKey].GetLocalizedString(
+                LocalizationSettings.SelectedLocale.Formatter,
+                _interpolatedValues);
         
         Debug.Log($"Interpolated string: {interpolatedString}");
     }
