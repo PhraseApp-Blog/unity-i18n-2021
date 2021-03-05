@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 using UnityEngine.Localization.Settings;
 using UnityEngine.Localization.SmartFormat.Extensions;
@@ -11,14 +10,17 @@ public class InterpolatedStringUpdater : MonoBehaviour
 
     private void Start()
     {
-        var source = LocalizationSettings.StringDatabase.SmartFormatter
+        var source = LocalizationSettings
+            .StringDatabase
+            .SmartFormatter
             .GetSourceExtension<GlobalVariablesSource>();
 
-        var characterName = source["global"]["character"] as 
-            StringGlobalVariable;
+        var characterName = 
+            source["global"]["character"] as StringGlobalVariable;
 
         var randomCharacterName = _characterNames[
-            Random.Range(0, _characterNames.Length)];
+            Random.Range(0, _characterNames.Length)
+        ];
 
         characterName.Value = randomCharacterName;
     }

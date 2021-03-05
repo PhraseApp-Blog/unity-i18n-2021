@@ -24,7 +24,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 212427857920
-    m_Localized: '{Character}...{Character} happened.'
+    m_Localized: '{Character} and his wovles...happened.'
     m_Metadata:
       m_Items:
       - id: 0
